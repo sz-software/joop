@@ -1,5 +1,6 @@
 {
   "name": "@sz-software/joop",
+  "author": "SZ-Software <info@sz.software> (https://sz.software)",
   "version": "1.0.0",
   "description": "Very basic asynchronous class emulation in JavaScript.",
   "homepage": "https://github.com/sz-software/joop#readme",
@@ -7,11 +8,11 @@
     "url": "https://github.com/sz-software/joop/issues"
   },
   "files": [
-    "./index.js",
+    "index.js",
     "README.md",
     "LICENSE"
   ],
-  "main": "./index.js",
+  "main": "index.js",
   "scripts": {
     "test": "jest --verbose --testTimeout 100",
     "prepare": "npm run test"
