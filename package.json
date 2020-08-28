@@ -5,7 +5,7 @@
   "homepage": "https://github.com/sz-software/joop#readme",
   "bugs": {
     "url": "https://github.com/sz-software/joop/issues"
-  }
+  },
   "files": [],
   "main": "./index.js",
   "scripts": {
