@@ -6,7 +6,11 @@
   "bugs": {
     "url": "https://github.com/sz-software/joop/issues"
   },
-  "files": [],
+  "files": [
+    "./index.js",
+    "README.md",
+    "LICENSE"
+  ],
   "main": "./index.js",
   "scripts": {
     "test": "jest --verbose --testTimeout 100",
