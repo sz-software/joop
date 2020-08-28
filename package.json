@@ -1,0 +1,28 @@
+{
+  "name": "@sz-software/joop",
+  "version": "1.0.0",
+  "description": "Very basic asynchronous class emulation in JavaScript.",
+  "homepage": "https://github.com/sz-software/joop#readme",
+  "bugs": {
+    "url": "https://github.com/sz-software/joop/issues"
+  }
+  "files": [],
+  "main": "./index.js",
+  "scripts": {
+    "test": "jest --verbose --testTimeout 100",
+    "prepare": "npm run test"
+  },
+  "keywords": [
+    "oop",
+    "async",
+    "asynchronous",
+    "class"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^26.4.2"
+  },
+  "dependencies": {
+    "is-directory": "^0.3.1"
+  }
+}
