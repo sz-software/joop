@@ -6,6 +6,19 @@ const testClass = joop(testClassPath)
 
 describe("API", () => {
 	test(
+		"when directory arugment is an array, path.join should be used",
+		async () => {
+			const testClass2 = joop([
+				__dirname,
+				"..",
+				"test-class"
+			])
+
+			expect(testClass2).toEqual(testClass)
+		}
+	)
+
+	test(
 		".init() should not be exported", 
 		async () => {
 			const inst = await testClass()

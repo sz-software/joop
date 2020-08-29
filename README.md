@@ -21,6 +21,14 @@ When `joop(dir)` is called, `dir` is shallowly scanned for `.js` files.
 Each `.js` file corresponds to exactly one class method.
 Private methods are prefixed with `_` (`_privateFn.js`)  and are not callable from outside.
 
+If `dir` is an array, `path.join` is applied to it:
+
+```javascript
+const person1 = joop("path/to/person")
+const person2 = joop(["path", "to", "person"])
+// person1 === person2
+```
+
 Every class definition needs to have at least one method called `init`.
 It is used to initialize the class as well for defining all public attributes.
 

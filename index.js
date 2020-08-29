@@ -17,6 +17,11 @@ const _addFunctionsFromDir = function(obj, dir) {
 }
 
 module.exports = function(dir) {
+	// Resolve array
+	if (Array.isArray(dir)) {
+		dir = path.join.apply(null, dir)
+	}
+
 	const abs_dir = path.resolve(dir)
 	const name = path.basename(dir)
 
