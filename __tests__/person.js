@@ -65,7 +65,7 @@ describe("Person", () => {
 	)
 
 	test(
-		"fromString should work as expected",
+		"static fromString function should work",
 		async () => {
 			const inst = await person.fromString("Hans,42")
 
