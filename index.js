@@ -4,8 +4,10 @@ const path = require("path")
 const isDirectory = require("is-directory")
 const cache = {}
 
-const _addFunctionsFromDir = function(obj, dir) {
+const _addFunctionsFromDir = function(obj, dir, ignoreList = []) {
 	for (const entry of fs.readdirSync(dir)) {
+		// Check ignore list
+		if (ignoreList.indexOf(entry) >= 0) continue
 		if (entry.slice(-3) !== ".js") continue
 
 		const fn = entry.slice(0, -3)
@@ -30,7 +32,7 @@ module.exports = function(dir) {
 	}
 
 	const definition = function() {
-		_addFunctionsFromDir(this, abs_dir)
+		_addFunctionsFromDir(this, abs_dir, ["index.js"])
 	}
 
 	// Make asynchronous instantiation the standard way

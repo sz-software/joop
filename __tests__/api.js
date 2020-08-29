@@ -33,6 +33,25 @@ describe("API", () => {
 	)
 
 	test(
+		"index.js should be ignored",
+		async () => {
+			const inst = await testClass()
+
+			expect(inst).not.toHaveProperty("index")
+		}
+	)
+
+	test(
+		"index.js should work correctly",
+		async () => {
+			const constructor1 = joop(testClassPath)
+			const constructor2 = require("../test-class")
+
+			expect(constructor1).toEqual(constructor2)
+		}
+	)
+
+	test(
 		".testFn() should be exported",
 		async () => {
 			const inst = await testClass()
