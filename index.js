@@ -32,6 +32,8 @@ module.exports = function(dir) {
 	}
 
 	const definition = function() {
+		this.__constructor = constructor
+
 		_addFunctionsFromDir(this, abs_dir, ["index.js"])
 	}
 

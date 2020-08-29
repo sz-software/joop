@@ -80,4 +80,24 @@ describe("API", () => {
 			expect(inst.publicVar).toEqual("Hans")
 		}
 	)
+
+	test(
+		".publicVar should not be writable",
+		async () => {
+			const inst = await testClass()
+
+			expect(inst.publicVar).toEqual("Hans")
+			inst.publicVar = "x"
+			expect(inst.publicVar).toEqual("Hans")
+		}
+	)
+
+	test(
+		".__constructor should equal the actual constructor",
+		async () => {
+			const inst = await testClass()
+
+			expect(inst.getConstructor()).toEqual(testClass)
+		}
+	)
 })
