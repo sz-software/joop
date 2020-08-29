@@ -1,7 +1,7 @@
 {
   "name": "@sz-software/joop",
   "author": "SZ-Software <info@sz.software> (https://sz.software)",
-  "version": "1.0.1",
+  "version": "2.0.0",
   "description": "Very basic asynchronous class emulation in JavaScript.",
   "homepage": "https://github.com/sz-software/joop#readme",
   "bugs": {
