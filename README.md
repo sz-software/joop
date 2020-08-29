@@ -1,5 +1,5 @@
 
-# @sz-software/joop [![Build Status](https://travis-ci.org/sz-software/joop.svg?branch=master)](https://travis-ci.org/sz-software/joop)
+# @sz-software/joop • [![Build Status](https://travis-ci.org/sz-software/joop.svg?branch=master)](https://travis-ci.org/sz-software/joop) [![npm version](https://badge.fury.io/js/%40sz-software%2Fjoop.svg)](https://badge.fury.io/js/%40sz-software%2Fjoop)
 
 > A very basic asynchronous class emulation in JavaScript.
 
