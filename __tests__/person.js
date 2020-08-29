@@ -1,8 +1,8 @@
 const path = require("path")
-const proto = require("../index.js")
+const joop = require("../index.js")
 
 const testClassPath = path.resolve(__dirname, "..", "person")
-const person = proto(testClassPath)
+const person = joop(testClassPath)
 
 describe("Person", () => {
 	test(

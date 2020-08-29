@@ -1,8 +1,8 @@
 const path = require("path")
-const proto = require("../index.js")
+const joop = require("../index.js")
 
 const testClassPath = path.resolve(__dirname, "..", "async-test-class")
-const testClass = proto(testClassPath)
+const testClass = joop(testClassPath)
 
 describe("Async API", () => {
 	test(
