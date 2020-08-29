@@ -15,6 +15,11 @@ describe("API", () => {
 			])
 
 			expect(testClass2).toEqual(testClass)
+			expect(
+				testClass2.__joop.root
+			).toEqual(
+				testClassPath
+			)
 		}
 	)
 

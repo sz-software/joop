@@ -65,5 +65,10 @@ module.exports = function(dir) {
 		_addFunctionsFromDir(constructor, static_dir)
 	}
 
+	// Add internal variables
+	constructor.__joop = {
+		root: abs_dir
+	}
+
 	return cache[abs_dir] = constructor
 }
